@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lintan Sekar Ayu | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #E2F3F5; color: #1e293b; }
+        .font-header { font-family: 'Abril Fatface', serif; }
+
+        /* Robot Life Animation */
+        @keyframes robot-float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            33% { transform: translateY(-20px) rotate(2deg); }
+            66% { transform: translateY(-10px) rotate(-2deg); }
+        }
+        @keyframes shadow-pulse {
+            0%, 100% { transform: scale(1); opacity: 0.2; }
+            50% { transform: scale(1.2); opacity: 0.1; }
+        }
+        .robot-living { animation: robot-float 6s ease-in-out infinite; }
+        .robot-shadow { animation: shadow-pulse 6s ease-in-out infinite; }
+
+        /* Custom Progress Bar Animation */
+        @keyframes grow { from { width: 0; } }
+        .animate-grow { animation: grow 1.5s ease-out forwards; }
+    </style>
+</head>
+<body>
+
+    <nav class="flex justify-between items-center px-10 md:px-24 py-8 sticky top-0 bg-[#E2F3F5]/80 backdrop-blur-md z-50">
+        <div class="font-bold italic text-xl tracking-tighter">LINTAN</div>
+        <div class="hidden md:flex space-x-10 text-[11px] font-bold uppercase tracking-[0.2em]">
+            <a href="#home" class="hover:text-teal-700 transition">Home</a>
+            <a href="#about" class="hover:text-teal-700 transition">About Me</a>
+            <a href="#skills" class="hover:text-teal-700 transition">Skills</a>
+            <a href="#projects" class="hover:text-teal-700 transition">Projects</a>
+            <a href="#contact" class="hover:text-teal-700 transition">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="flex flex-col md:flex-row items-center justify-center min-h-[85vh] px-10 gap-16 md:gap-32">
+        <div class="relative group">
+            <div class="w-64 h-64 md:w-80 md:h-80 rounded-full border-[10px] border-white shadow-2xl overflow-hidden transition-transform duration-500 group-hover:scale-105">
+                <img src="lintan.jpeg" alt="Lintan" class="w-full h-full object-cover">
+            </div>
+        </div>
+        <div class="max-w-md text-center md:text-left">
+            <h1 class="font-header text-6xl md:text-8xl leading-[0.8] mb-6 tracking-tighter uppercase">
+                LINTAN<br>SEKAR AYU
+            </h1>
+            <p class="text-[13px] text-slate-600 mb-8 leading-relaxed">
+                Hello, my name is Lintan Sekar Ayu. I design and code websites with HTML and CSS, always looking to learn and add more to my toolkit. I was born in Boyolali, Central Java.
+            </p>
+            <a href="#projects" class="inline-block bg-[#4D7271] text-white px-10 py-3 font-bold rounded-sm shadow-xl hover:bg-[#3d5a58] transition-all transform hover:-translate-y-1">Project</a>
+           <div class="flex justify-center md:justify-start space-x-6 mt-10 text-xl text-slate-700">
+            <a href="https://wa.me/081391398729" target="_blank" class="hover:text-teal-600 transition">
+                  <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/lintansaa?igsh=eHZuajQ3bGY5MXFv" target="_blank" class="hover:text-teal-600 transition">
+                  <i class="fab fa-instagram"></i>
+             </a>
+            <a href="https://github.com/lintansekar" target="_blank" class="hover:text-teal-600 transition">
+                  <i class="fab fa-github"></i>
+            </a>
+        </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-10 md:px-32 grid md:grid-cols-2 gap-16 items-center">
+        <div class="order-2 md:order-1">
+            <h2 class="font-header text-5xl mb-10">About Me</h2>
+            <div class="space-y-6 text-[13px] leading-loose text-slate-600">
+                <p>My name is Lintan Sekar Ayu. I was born on February 9th, 2010, in Boyolali, Central Java. I am the second of three children.My hobby is listening to music.</p>
+                <p>I started my journey by designing layouts and learning how to code them with HTML and CSS. I love the process of turning a blank page into a working website. I'm constantly learning new ways to improve my skills and create better digital experiences.</p>
+            </div>
+            <a href="./Experience.pdf" class="mt-10 bg-[#4D7271] text-white px-10 py-3 font-bold rounded-sm hover:opacity-90 inline-block">
+    Experience
+</a>
+        </div>
+        <div class="order-1 md:order-2 flex flex-col items-center justify-center">
+            <img src="robot.png" alt="robot" class="w-64 md:w-96 robot-living drop-shadow-2xl">
+            <div class="w-40 h-6 bg-black/10 rounded-[100%] blur-md robot-shadow mt-4"></div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 px-10 md:px-60">
+        <h2 class="font-header text-5xl text-center mb-20">Skills</h2>
+        <div class="max-w-3xl mx-auto space-y-10">
+            <div>
+                <div class="flex justify-between items-center mb-3 font-bold text-[13px]">
+                    <span class="flex items-center uppercase"><i class="fab fa-html5 text-orange-600 mr-4 text-2xl"></i> HTML</span>
+                    <span>80%</span>
+                </div>
+                <div class="w-full bg-white rounded-full h-3">
+                    <div class="bg-[#134E4A] h-3 rounded-full animate-grow" style="width: 80%"></div>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between items-center mb-3 font-bold text-[13px]">
+                    <span class="flex items-center uppercase"><i class="fab fa-js text-yellow-500 mr-4 text-2xl"></i> Javascript</span>
+                    <span>69%</span>
+                </div>
+                <div class="w-full bg-white rounded-full h-3">
+                    <div class="bg-[#134E4A] h-3 rounded-full animate-grow" style="width: 69%"></div>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between items-center mb-3 font-bold text-[13px]">
+                    <span class="flex items-center uppercase"><i class="fab fa-figma text-purple-600 mr-4 text-2xl"></i> Figma</span>
+                    <span>80%</span>
+                </div>
+                <div class="w-full bg-white rounded-full h-3">
+                    <div class="bg-[#134E4A] h-3 rounded-full animate-grow" style="width: 80%"></div>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between items-center mb-3 font-bold text-[13px]">
+                    <span class="flex items-center uppercase"><i class="fab fa-css3-alt text-blue-600 mr-4 text-2xl"></i> CSS</span>
+                    <span>85%</span>
+                </div>
+                <div class="w-full bg-white rounded-full h-3">
+                    <div class="bg-[#134E4A] h-3 rounded-full animate-grow" style="width: 85%"></div>
+                </div>
+            </div>
+          <div class="flex justify-between items-center mb-3 font-bold text-[13px]">
+    <span class="flex items-center uppercase">
+        <i class="fas fa-infinity text-red-500 mr-4 text-2xl"></i> Adobe Creative Cloud
+    </span>
+    <span>50%</span>
+</div>
+<div class="w-full bg-white rounded-full h-3">
+    <div class="bg-[#134E4A] h-3 rounded-full animate-grow" style="width: 50%"></div>
+</div>
+        </div>
+    </section>
+
+   <section id="projects" class="py-24 px-10 text-center bg-[#E2F2F5]">
+    <h2 class="font-serif-bold text-5xl mb-4">Projects</h2>
+    <p class="text-[10px] uppercase tracking-[0.3em] text-slate-500 mb-20 font-bold">Recent experience with various tools and technologies</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-10 text-left">
+        
+        <div class="bg-white p-6 rounded-3xl shadow-sm hover:shadow-xl transition-all group">
+            <div class="bg-emerald-900 rounded-2xl h-40 mb-6 overflow-hidden">
+                <img src="tugas1.jpeg" alt="The Blessing Cycle" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <h4 class="font-bold text-xs uppercase mb-2">The Blessing Cycle</h4>
+            <p class="text-[10px] text-slate-500 mb-6 leading-relaxed">Explain the purpose of recycling waste into useful creative products.</p>
+            <a href="index-2.html" class="inline-block bg-[#4D7271] text-white text-[9px] font-bold px-5 py-2 rounded-sm shadow-md hover:bg-[#3d5a58] transition">Read More</a>
+        </div>
+
+        <div class="bg-white p-6 rounded-3xl shadow-sm hover:shadow-xl transition-all group">
+            <div class="bg-slate-800 rounded-2xl h-40 mb-6 overflow-hidden">
+                <img src="tugas2.jpeg" alt="SMI Digital" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <h4 class="font-bold text-xs uppercase mb-2">SMK Digital</h4>
+            <p class="text-[10px] text-slate-500 mb-6 leading-relaxed">Digital scholl are technology-based educational institution that integrate online and interactive learning.</p>
+            <a href="index2.html" class="inline-block bg-[#4D7271] text-white text-[9px] font-bold px-5 py-2 rounded-sm shadow-md hover:bg-[#3d5a58] transition">Read More</a>
+        </div>
+
+        <div class="bg-white p-6 rounded-3xl shadow-sm hover:shadow-xl transition-all group">
+            <div class="bg-teal-900 rounded-2xl h-40 mb-6 overflow-hidden">
+                <img src="tugas3.jpeg" alt="Environment" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <h4 class="font-bold text-xs uppercase mb-2">Environment</h4>
+            <p class="text-[10px] text-slate-500 mb-6 leading-relaxed">Environment is the natural world and its ecosystem that must be protected for a sustainable future.</p>
+            <a href="index3.html" class="inline-block bg-[#4D7271] text-white text-[9px] font-bold px-5 py-2 rounded-sm shadow-md hover:bg-[#3d5a58] transition">Read More</a>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left">
+        
+        <div class="bg-white p-6 rounded-3xl shadow-sm hover:shadow-xl transition-all group">
+            <div class="bg-orange-100 rounded-2xl h-40 mb-6 overflow-hidden">
+                <img src="tugas4.jpeg" alt="Bakery & Cake" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <h4 class="font-bold text-xs uppercase mb-2">Bakery & Cake</h4>
+            <p class="text-[10px] text-slate-500 mb-6 leading-relaxed">The art of processing dough into various sweet breads and cakes that pamper the tangue in every atmosphere.</p>
+            <a href="index4.html" class="inline-block bg-[#4D7271] text-white text-[9px] font-bold px-5 py-2 rounded-sm shadow-md hover:bg-[#3d5a58] transition">Read More</a>
+        </div>
+
+        <div class="bg-white p-6 rounded-3xl shadow-sm hover:shadow-xl transition-all group">
+            <div class="bg-lime-100 rounded-2xl h-40 mb-6 overflow-hidden">
+                <img src="tugas5.jpeg" alt="Healthy Catering" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <h4 class="font-bold text-xs uppercase mb-2">Healthy Catering</h4>
+            <p class="text-[10px] text-slate-500 mb-6 leading-relaxed">Serving healthy and organic catering without preservatives, spesially prepared by proffesional nutritioists.</p>
+            <a href="index5.html" class="inline-block bg-[#4D7271] text-white text-[9px] font-bold px-5 py-2 rounded-sm shadow-md hover:bg-[#3d5a58] transition">Read More</a>
+        </div>
+    </div>
+</section>
+
+    <section id="contact" class="py-24 px-10 max-w-6xl mx-auto">
+        <h2 class="font-header text-5xl text-center mb-20">Contact</h2>
+        <div class="bg-[#B5DBE0] p-10 md:p-20 rounded-[60px] shadow-inner flex flex-col md:flex-row gap-20">
+            <div class="flex-1 space-y-6">
+                <h3 class="font-bold text-2xl mb-4">Contact</h3>
+                <input type="text" placeholder="Name" class="w-full p-4 rounded-xl border-none outline-none focus:ring-2 focus:ring-[#4D7271]">
+                <input type="email" placeholder="Email" class="w-full p-4 rounded-xl border-none outline-none focus:ring-2 focus:ring-[#4D7271]">
+                <textarea placeholder="Your Message" class="w-full p-4 rounded-xl h-40 border-none outline-none focus:ring-2 focus:ring-[#4D7271]"></textarea>
+                <button class="w-full bg-[#3D5D5D] text-white py-4 rounded-xl font-bold uppercase tracking-widest text-xs hover:bg-black transition">Send Message</button>
+            </div>
+            <div class="flex-1 flex flex-col justify-center items-center md:items-start space-y-12">
+                 <div class="flex justify-center md:justify-start space-x-6 mt-10 text-xl text-slate-700">
+            <a href="https://wa.me/081391398729" target="_blank" class="hover:text-teal-600 transition">
+                  <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/lintansaa?igsh=eHZuajQ3bGY5MXFv" target="_blank" class="hover:text-teal-600 transition">
+                  <i class="fab fa-instagram"></i>
+             </a>
+            <a href="https://github.com/lintansekar" target="_blank" class="hover:text-teal-600 transition">
+                  <i class="fab fa-github"></i>
+            </a>
+        </div>
+                <div class="flex items-center space-x-5 group">
+    <div class="bg-white p-4 rounded-full shadow-md group-hover:bg-teal-50 transition">
+        <i class="fas fa-envelope text-2xl text-slate-800"></i>
+    </div>
+    
+    <a href="mailto:lintansekarayu8@gmail.com" class="font-bold text-sm hover:text-teal-700 transition">
+        lintansekarayu8@gmail.com
+    </a>
+</div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-12 px-12 flex flex-col md:flex-row justify-between items-center text-[10px] font-bold tracking-[0.4em] uppercase">
+        <p>© 2026 LINTAN SEKAR AYU</p>
+        <div class="flex space-x-10 mt-8 md:mt-0">
+            <a href="#home" class="hover:text-teal-400">Home</a>
+            <a href="#about" class="hover:text-teal-400">About Me</a>
+            <a href="#skills" class="hover:text-teal-400">Skills</a>
+            <a href="#projects" class="hover:text-teal-400">Projects</a>
+            <a href="#contact" class="hover:text-teal-400">Contact</a>
+        </div>
+    </footer>
+
+</body>
+</html>
